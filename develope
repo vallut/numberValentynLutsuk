@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (; ; )
+            {
+                Console.WriteLine("Введите число");
+                string number = Console.ReadLine();
+                try
+                {
+                    if (Convert.ToInt32(number) == 7)
+                    {
+                        Console.WriteLine("Привет");
+                    }
+                    else if (number == "exit"){
+                        break;
+                    }
+                }
+                finally
+                {
+                    Console.WriteLine("для выходя введите exit");
+                }
+               
+            }
+        }
+    }
+}
